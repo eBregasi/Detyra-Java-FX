@@ -1,0 +1,29 @@
+# JavaFX Java Project Requirements
+
+JDK Version: 24
+JavaFX SDK Version: 24.0.1
+IDE: IntelliJ IDEA (2023.3+ ose 2025.1)
+
+# File structure
+src/
+ ├── Main.java
+ ├── CircleBounce.java
+ ├── SquareMove.java
+ ├── HexagonColorChange.java
+ └── ImageHover.java
+
+# JavaFX modules needed
+--module-path "C:\javafx-sdk-24.0.1\lib"
+--add-modules javafx.controls,javafx.fxml
+
+# Required JavaFX JARs (optional if module path used)
+javafx.base.jar
+javafx.controls.jar
+javafx.fxml.jar
+javafx.graphics.jar
+
+# Optional VM Options (for IntelliJ Run Configuration)
+--enable-native-access=javafx.graphics
+
+# Image resources
+src/resources/image.jpg (vendos këtu imazhin që përdor ImageHover.java)
